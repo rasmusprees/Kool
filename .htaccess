@@ -1,3 +1,9 @@
+AuthType Basic
+AuthName "protected"
+AuthUserFile C:\xampp\htdocs\veebirakendused\.htpasswd
+Require valid-user
+
+
 <files "*.txt">
 
 deny from all

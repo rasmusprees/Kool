@@ -1,7 +1,13 @@
 
 <meta charset = "utf-8">
 
+<script src="script.js">
+</script>
+
+
 <?php
+
+echo "<div></div>";
 require 'components.php';
 require 'function.php';
 $name = "Tarmo";
@@ -22,10 +28,13 @@ menu($menu_begin, $menu_arr,$menu_end);
 
 aeg();
 // näited teksti kuvamise kohta
+
 echo "$name esimene PHP's kirjutatud lause!<br>";
 echo '<b>$name esimene PHPs kirjutatud lause!</b><br>';
 echo "Nüüd vaatame täpitähti<br>";
 
+
 GetVisitorIp();
+counter();
 
 ?>
