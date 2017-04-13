@@ -28,8 +28,9 @@ echo "<br>";
 
 
 //------tühikutest vaja lahti saada------
+$cleanStr = trim(preg_replace('/\s\s+/', ' ', str_replace("\n", " ", $text)));
 
-$words = explode(" ", $text); //jagab arrayks mu inputi
+$words = explode(" ", $cleanStr); //jagab arrayks mu inputi
 echo sizeof($words); // array suurus koos üleliigsete tühikutega
 
 include_once 'string.html';
